@@ -137,7 +137,7 @@ body {
 }
 
 .apresentacao__img {
-    border-radius: 15px;
+    border-radius: 50%;
     box-shadow: 10px 7px 20px var(--cor-secundaria);
     width: 35%;
 }
