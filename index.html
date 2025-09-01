@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Jailton Monteiro</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #e6edf3;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px;
+      background-color: #161b22;
+      border-bottom: 1px solid #1f6feb;
+    }
+    header h1 {
+      color: #58a6ff;
+      font-size: 24px;
+    }
+    header .links a {
+      margin-left: 15px;
+      color: #e6edf3;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    header .links a:hover {
+      color: #58a6ff;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #58a6ff;
+    }
+    .hero h2 {
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+    .technologies span {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 15px;
+      border-radius: 20px;
+      background-color: #161b22;
+      border: 1px solid #58a6ff;
+    }
+    .projects h2 {
+      color: #58a6ff;
+      margin-bottom: 20px;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background-color: #161b22;
+      border: 1px solid #58a6ff;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    }
+    .card h3 {
+      color: #58a6ff;
+      margin-bottom: 10px;
+    }
+    .card p {
+      flex-grow: 1;
+      margin-bottom: 15px;
+    }
+    .card a {
+      display: inline-block;
+      padding: 10px 15px;
+      border: 1px solid #58a6ff;
+      color: #58a6ff;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+      text-align: center;
+    }
+    .card a:hover {
+      background-color: #58a6ff;
+      color: #0d1117;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #161b22;
+      border-top: 1px solid #1f6feb;
+      color: #8b949e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jailton Monteiro</h1>
+    <div class="links">
+      <a href="https://github.com/jailtonmonteiro" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/silvajailton/" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img src="/src/images/profile.jpg" alt="Foto de perfil">
+    <div>
+      <h2>Sobre mim</h2>
+      <p>Sou estudante de análise de dados com foco em transformar informações em insights estratégicos. Tenho experiência em Python, Pandas, SQL e Power BI, e compartilho meus projetos como forma de aprendizado e prática.</p>
+    </div>
+  </section>
+
+  <section class="technologies">
+    <h2>Tecnologias</h2>
+    <div>
+      <span>Python</span>
+      <span>Pandas</span>
+      <span>SQL</span>
+      <span>Power BI</span>
+      <span>Excel</span>
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>Projetos</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Provisionamento de Dados</h3>
+        <p>Download de dados de voos da anac e disponibilização.</p>
+        <a href="https://github.com/jailtonmonteiro/download_anac_voos" target="_blank">Ver projeto</a>
+      </div>
+      <div class="card">
+        <h3>Limpando Dados de RH</h3>
+        <p>Projeto de ETL com Python e Pandas para tratar dados de RH.</p>
+        <a href="#" target="_blank">Ver projeto</a>
+      </div>
+      <div class="card">
+        <h3>Previsão de Churn</h3>
+        <p>Modelo de Machine Learning para prever cancelamentos de clientes.</p>
+        <a href="#" target="_blank">Ver projeto</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © <script>document.write(new Date().getFullYear())</script> Jailton Monteiro - Portfólio
+  </footer>
+</body>
+</html>
