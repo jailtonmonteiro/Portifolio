@@ -1,171 +1,172 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfólio - Jailton Monteiro</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #0d1117;
-      color: #e6edf3;
-    }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      background-color: #161b22;
-      border-bottom: 1px solid #1f6feb;
-    }
-    header h1 {
-      color: #58a6ff;
-      font-size: 24px;
-    }
-    header .links a {
-      margin-left: 15px;
-      color: #e6edf3;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    header .links a:hover {
-      color: #58a6ff;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 20px;
-    }
-    .hero img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 4px solid #58a6ff;
-    }
-    .hero h2 {
-      color: #58a6ff;
-      margin-bottom: 10px;
-    }
-    .technologies span {
-      display: inline-block;
-      margin: 5px;
-      padding: 10px 15px;
-      border-radius: 20px;
-      background-color: #161b22;
-      border: 1px solid #58a6ff;
-    }
-    .projects h2 {
-      color: #58a6ff;
-      margin-bottom: 20px;
-    }
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background-color: #161b22;
-      border: 1px solid #58a6ff;
-      border-radius: 10px;
-      padding: 20px;
-      transition: transform 0.3s, box-shadow 0.3s;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.4);
-    }
-    .card h3 {
-      color: #58a6ff;
-      margin-bottom: 10px;
-    }
-    .card p {
-      flex-grow: 1;
-      margin-bottom: 15px;
-    }
-    .card a {
-      display: inline-block;
-      padding: 10px 15px;
-      border: 1px solid #58a6ff;
-      color: #58a6ff;
-      border-radius: 5px;
-      text-decoration: none;
-      transition: background 0.3s, color 0.3s;
-      text-align: center;
-    }
-    .card a:hover {
-      background-color: #58a6ff;
-      color: #0d1117;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #161b22;
-      border-top: 1px solid #1f6feb;
-      color: #8b949e;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jailton | Analista de Dados</title>
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-  <header>
-    <h1>Jailton Monteiro</h1>
-    <div class="links">
-      <a href="https://github.com/jailtonmonteiro" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/silvajailton/" target="_blank">LinkedIn</a>
-    </div>
-  </header>
 
-  <section class="hero">
-    <img src="src/images/profile.jpg" alt="Foto de perfil">
-    <div>
+  <div id="mouse-spotlight"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h2 class="logo">J</h2>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">Sobre</a>
+      <a href="#skills">Skills</a>
+      <a href="#technologies">Tecnologias</a>
+      <a href="#study">Estudos</a>
+      <a href="#projects">Projetos</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </aside>
+
+  <!-- CONTEÚDO -->
+  <main class="content">
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <h1>Eu sou <span>Jailton</span>,<br />Aspirante a Dados</h1>
+      <p>Transformo dados em insights acionáveis.</p>
+      <a href="#projects" class="btn">Ver Projetos</a>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="about" class="section">
       <h2>Sobre mim</h2>
-      <p>Sou estudante de análise de dados com foco em transformar informações em insights estratégicos. Tenho experiência em Python, Pandas, SQL e Power BI, e compartilho meus projetos como forma de aprendizado e prática.</p>
-    </div>
-  </section>
+      <p>
+        Analista de Dados com foco em SQL, Python e visualização de dados.
+      </p>
+    </section>
 
-  <section class="technologies">
-    <h2>Tecnologias</h2>
-    <div>
-      <span>Python</span>
-      <span>Pandas</span>
-      <span>SQL</span>
-      <span>Power BI</span>
-      <span>Excel</span>
-    </div>
-  </section>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>Habilidades</h2>
 
-  <section class="projects">
-    <h2>Projetos</h2>
-    <div class="projects-grid">
-      <div class="card">
-        <h3>Provisionamento de Dados</h3>
-        <p>Download de dados de voos da anac e disponibilização.</p>
-        <a href="https://github.com/jailtonmonteiro/download_anac_voos" target="_blank">Ver projeto</a>
+      <div class="skills-grid">
+        <span>SQL</span>
+        <span>Python</span>
+        <span>Power BI</span>
+        <span>Estatística</span>
+        <span>ETL</span>
+        <span>Git</span>
       </div>
-      <div class="card">
-        <h3>Limpando Dados de RH</h3>
-        <p>Projeto de ETL com Python e Pandas para tratar dados de RH.</p>
-        <a href="#" target="_blank">Ver projeto</a>
-      </div>
-      <div class="card">
-        <h3>Previsão de Churn</h3>
-        <p>Modelo de Machine Learning para prever cancelamentos de clientes.</p>
-        <a href="#" target="_blank">Ver projeto</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    © <script>document.write(new Date().getFullYear())</script> Jailton Monteiro - Portfólio
-  </footer>
+    <!-- TECNOLOGIAS -->
+    <section id="technologies" class="section">
+      <h2>Tecnologias</h2>
+
+      <div class="tech-grid">
+        <div class="card">
+          <h3>Dados & Análise</h3>
+          <ul>
+            <li>SQL (PostgreSQL, MySQL)</li>
+            <li>Python</li>
+            <li>Pandas</li>
+            <li>NumPy</li>
+            <li>Estatística</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Visualização</h3>
+          <ul>
+            <li>Power BI</li>
+            <li>Matplotlib</li>
+            <li>Seaborn</li>
+            <li>Dashboards</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Ferramentas</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Excel Avançado</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTUDOS -->
+    <section id="study" class="section">
+      <h2>Cursos e Materiais de Estudo</h2>
+
+      <div class="study-grid">
+        <div class="card">
+          <h3>Fundamentos</h3>
+          <ul>
+            <li>Primeiras Mágias do SQL – Teo Me Why</li>
+            <li>Estatística para Dados</li>
+            <li>Livro: Naked Statistics</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Python</h3>
+          <ul>
+            <li>Python para Análise de Dados</li>
+            <li>Pandas & NumPy</li>
+            <li>Kaggle (prática)</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>BI & Visualização</h3>
+          <ul>
+            <li>Power BI Avançado</li>
+            <li>Storytelling com Dados</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projects" class="section">
+  <h2>Projetos</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3>Análise de Vendas</h3>
+      <p>Dashboard em Power BI.</p>
+      <a href="#">Ver no GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Análise de Continuidade</h3>
+      <p>Dashboard em Power BI.</p>
+      <a href="#">Ver no GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>Outro Projeto</h3>
+      <p>Análise exploratória com Python.</p>
+      <a href="#">Ver no GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- CONTATO -->
+    <section id="contact" class="section">
+      <h2>Contato</h2>
+      <p>Email: dev.jailton@gmail.com</p>
+      <p>LinkedIn: linkedin.com/in/silvajailton</p>
+      <p>GitHub: github.com/jailtonmonteiro</p>
+    </section>
+
+  </main>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
